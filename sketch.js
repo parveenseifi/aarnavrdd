@@ -55,8 +55,9 @@ function draw()
     
     player.velocityY = player.velocityY + 0.8;
 
-    if (keyDown("space")) {
+    if (touches.length>0 || keyDown("space")) {
       createBullet(player.x);
+      touche = [];
     }
 
    
